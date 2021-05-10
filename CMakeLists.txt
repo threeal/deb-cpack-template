@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
+project(libsomething-dev)
+
 add_subdirectory("folder-name")
 
 set(CPACK_GENERATOR "DEB")
