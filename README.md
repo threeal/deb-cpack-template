@@ -29,14 +29,14 @@ This project works by including a third-party source code as a [Git submodule](h
   ```
 - Configure the CMake with the following options.
   ```bash
-  $ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr ..
+  $ cmake -DCMAKE_INSTALL_PREFIX=/usr ..
   ```
 - Build the project.
   ```bash
   $ make
   ```
   > Optionally, you could speed up the build process by specifying the parallel job using `-j` option, see [this](https://www.gnu.org/software/make/manual/html_node/Parallel.html).
-- Create the debian package using cpack.
+- Create the Debian package using CPack.
   ```bash
   $ cpack
   ```
