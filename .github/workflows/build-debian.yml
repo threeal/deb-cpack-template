@@ -1,0 +1,36 @@
+name: Build debian
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+jobs:
+  build-debian:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v2.3.4
+
+      - name: Update submodules
+        run: git submodule update --init --recursive
+
+      - name: Create a build directory
+        run: mkdir build
+
+      - name: Configure CMake
+        working-directory: build
+        run: cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+
+      - name: Build the project
+        working-directory: build
+        run: make -j8
+
+      - name: Build Debian package
+        working-directory: build
+        run: cpack
+
+      - name: Save result
+        uses: actions/upload-artifact@v2.2.3
+        with:
+          name: package
+          path: build/*.deb
