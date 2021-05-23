@@ -13,6 +13,10 @@ set(CPACK_DEBIAN_PACKAGE_NAME "libsomething-dev")
 set(CPACK_DEBIAN_PACKAGE_VERSION 1.0.0)
 set(CPACK_DEBIAN_PACKAGE_RELEASE 1)
 
+# Uncomment this to use timestamp for the Debian release number
+# string(TIMESTAMP NOW "%s")
+# set(CPACK_DEBIAN_PACKAGE_RELEASE ${NOW})
+
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "some short description")
 
 set(CPACK_PACKAGE_DESCRIPTION
