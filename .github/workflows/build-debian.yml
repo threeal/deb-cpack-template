@@ -1,4 +1,4 @@
-name: Build debian
+name: Build Debian
 on:
   pull_request:
     branches: [ main ]
