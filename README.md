@@ -41,6 +41,12 @@ This project works by including a third-party source code as a [Git submodule](h
   $ cpack
   ```
 
+## Usage Examples
+
+This list contains repositories that use the template from this repository.
+- [threeal/librtabmap-deb](https://github.com/threeal/librtabmap-deb).
+- [threeal/libfreenect2-deb](https://github.com/threeal/libfreenect2-deb).
+
 ## License
 
 This project is maintained by [Alfi Maulana](https://threeal.github.io/) and licensed under the [MIT LICENSE](./LICENSE)
