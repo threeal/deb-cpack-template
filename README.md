@@ -1,5 +1,9 @@
 # Debian Package CPack Template
 
+[![repository size](https://img.shields.io/github/repo-size/threeal/deb-cpack-template)](https://github.com/threeal/deb-cpack-template/pulse)
+[![license](https://img.shields.io/github/license/threeal/deb-cpack-template)](./LICENSE)
+[![build status](https://img.shields.io/github/workflow/status/threeal/deb-cpack-template/Build%20Debian?label=build)](https://github.com/threeal/deb-cpack-template/actions)
+
 This project contains a [CPack](https://cmake.org/cmake/help/latest/module/CPack.html) template to build a [Debian package](https://wiki.debian.org/Packaging) of external third-party [CMake](https://cmake.org/) projects.
 This project is created to simplify the deployment of third-party libraries/frameworks which are build using CMake but do not yet have an official Debian package to be used.
 This project works by including a third-party source code as a [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules), then including it as a [CMake subdirectory](https://cmake.org/cmake/help/latest/command/add_subdirectory.html), and last compile it as a Debian package.
