@@ -31,7 +31,7 @@ This project works by including a third-party source code as a [Git submodule](h
   $ mkdir build
   $ cd build
   ```
-- Configure the CMake with the following options.
+- Configure CMake with the following options.
   ```bash
   $ cmake -DCMAKE_INSTALL_PREFIX=/usr ..
   ```
@@ -40,9 +40,9 @@ This project works by including a third-party source code as a [Git submodule](h
   $ make
   ```
   > Optionally, you could speed up the build process by specifying the parallel job using `-j` option, see [this](https://www.gnu.org/software/make/manual/html_node/Parallel.html).
-- Create the Debian package using CPack.
+- Build Debian packages.
   ```bash
-  $ cpack
+  $ make package
   ```
 
 ## Usage Examples
@@ -53,4 +53,4 @@ This list contains repositories that use the template from this repository.
 
 ## License
 
-This project is maintained by [Alfi Maulana](https://threeal.github.io/) and licensed under the [MIT LICENSE](./LICENSE)
+This project is licensed under the [MIT License](./LICENSE)

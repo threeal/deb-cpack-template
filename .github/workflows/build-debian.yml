@@ -25,11 +25,11 @@ jobs:
         working-directory: build
         run: make -j8
 
-      - name: Build Debian package
+      - name: Build Debian packages
         working-directory: build
-        run: cpack
+        run: make package
 
-      - name: Save result
+      - name: Save results
         uses: actions/upload-artifact@v2.2.3
         with:
           name: package
